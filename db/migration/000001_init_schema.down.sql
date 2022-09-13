@@ -1,0 +1,3 @@
+DROP TABLE IF EXITS entries;
+DROP TABLE IF EXITS transfers;
+DROP TABLE IF EXITS accounts;
