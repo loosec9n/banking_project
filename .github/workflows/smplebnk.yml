@@ -1,0 +1,27 @@
+name: smplebnk-test
+
+on:
+  push:
+    branches: [ "sql/migration" ]
+  pull_request:
+    branches: [ "sql/migration" ]
+
+jobs:
+
+  build:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v3
+      with:
+        go-version: 1.18
+      id: go-install
+    
+    - name: check out code into the go module directory
+      uses: actions/checkout@v3
+
+    - name: Test
+      run: make test
