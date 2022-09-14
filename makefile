@@ -16,4 +16,7 @@ dbup:
 dbdown:
 	migrate -path db/migration -database "postgresql://root:password@localhost:5432/simple_bank?sslmode=disable" -verbose down
 
-.PHONY: postgres indb createdb dropdb dbup dbdown 
+sqlc: 
+	sqlc generate
+
+.PHONY: postgres indb createdb dropdb dbup dbdown sqlc
