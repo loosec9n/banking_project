@@ -21,7 +21,7 @@ jobs:
       id: go-install
     
     - name: check out code into the go module directory
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Test
       run: make test.
