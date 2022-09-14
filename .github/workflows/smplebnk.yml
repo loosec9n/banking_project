@@ -1,4 +1,4 @@
-name: smplebnk-test
+name: ci-test
 
 on:
   push:
