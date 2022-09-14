@@ -41,6 +41,12 @@ jobs:
     
     - name: check out code into the go module directory
       uses: actions/checkout@v3
+
+    - name: installing golang-migration 
+      run: |
+        curl -L https://github.com/golang-migrate/migrate/releases/download/v4.15.2/migrate.linux-amd64.deb | tar xvz
+        sudo mv migrate /usr/bin/
+        which migrate
     
     - name: run migration
       run: make dbup
