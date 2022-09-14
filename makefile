@@ -19,4 +19,7 @@ dbdown:
 sqlc: 
 	sqlc generate
 
-.PHONY: postgres indb createdb dropdb dbup dbdown sqlc
+test:
+	go test -v -cover ./...
+
+.PHONY: postgres indb createdb dropdb dbup dbdown sqlc test
