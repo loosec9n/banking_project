@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-//createRandomAccount creates an account for testing finctionality
+//createRandomAccount -> creates an account for testing finctionality
 func createRandomAccount(t *testing.T) Account {
 	arg := CreateAccountParams{
 		Owner:    utils.RandomOwner(),
