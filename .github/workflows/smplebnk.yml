@@ -2,9 +2,9 @@ name: ci-test
 
 on:
   push:
-    branches: [ "sql/migration" ]
+    branches: [ "unitTesting" ]
   pull_request:
-    branches: [ "sql/migration" ]
+    branches: [ "master" ]
 
 jobs:
 
