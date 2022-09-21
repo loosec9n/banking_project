@@ -94,7 +94,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: book.cart:v1.0.0  #${{ steps.meta.outputs.tags }}
+          tags: bankcart:v1.0.0  #${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
       
       - name: Image digest
