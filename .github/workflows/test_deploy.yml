@@ -85,7 +85,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: ${{ secrets.REGISTRY }}/${{ secrets.IMAGE_NAME }} 
+          images: ${{ secrets.REGISTRY }}/${{ secrets.IMAGE_NAME }}:v.0.1
           tags: |
             type=ref,event=branch
             type=semver,pattern={{version}}
