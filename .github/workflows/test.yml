@@ -1,8 +1,6 @@
-name: ci-test
+name: Unit Test
 
 on:
-  push:
-    branches: [ "unitTesting" ]
   pull_request:
     branches: [ "master" ]
 
