@@ -4,6 +4,9 @@ on:
   pull_request:
     branches: [ master ]
 
+  #allow to run this workflow manually from the actions tab
+  workflow_dispatch:
+
 jobs: 
 
   builds:
