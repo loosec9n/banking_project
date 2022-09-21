@@ -1,6 +1,8 @@
 name: Unit Test And Deploying to Docker Hub
 
 on:
+  tags: 
+      - 'v*'
   pull_request:
     branches: [ "master" ]
 
@@ -59,7 +61,10 @@ jobs:
     
     name: deploy to docker hub
     runs-on: ubuntu-latest
-    needs: test
+    # needs: test
+
+    #allow to run this workflow manually from the actions tab
+    workflow_dispatch:
 
     steps:
       - name: Check out the repo
