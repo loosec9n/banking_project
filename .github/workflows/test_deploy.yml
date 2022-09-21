@@ -85,7 +85,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: loosec9n/bank.now #${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ secrets.REGISTRY }}/${{ secrets.IMAGE_NAME }} 
+                  #loosec9n/bank.now #${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
       
       - name: Build and push Docker image
         id: docker_build
@@ -93,7 +94,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }} #/bank.now:latest
+          tags: ${{ steps.meta.outputs.tags }}/bank.now:latest
           labels: ${{ steps.meta.outputs.labels }}
       
       - name: Image digest
