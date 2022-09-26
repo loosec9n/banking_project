@@ -86,13 +86,7 @@ jobs:
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
           images: ${{ secrets.REGISTRY }}/${{ secrets.IMAGE_NAME }}
-          # tags: |
-          #   type=ref,event=branch
-          #   type=semver,pattern={{version}}
-          #   type=semver,pattern={{major}}.{{minor}}
-          # flavor: |
-          #   latest=true
-      
+     
       - name: Build and push Docker image
         id: docker_build
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
