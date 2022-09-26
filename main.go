@@ -15,6 +15,7 @@ func main() {
 	}
 
 	log.SetOutput(file)
+
 	log.Println("SimpleBank")
 
 	//handler fucntion
