@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bank-now-api-deployment
+  labels:
+    app: bank-now-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bank-now-api
+  template:
+    metadata:
+      labels:
+        app: bank-now-api
+    spec:
+      containers:
+      - name: bank-now-api
+        image: loosec9n/bank.now:pr-12
+        ports:
+        - containerPort: 8080
