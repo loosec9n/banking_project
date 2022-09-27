@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: bank-now-api
-        image: loosec9n/bank.now:pr-13
+        image: loosec9n/bank.now:latest
         ports:
         - containerPort: 8080
 ---
