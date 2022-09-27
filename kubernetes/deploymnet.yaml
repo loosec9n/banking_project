@@ -16,6 +16,23 @@ spec:
     spec:
       containers:
       - name: bank-now-api
-        image: loosec9n/bank.now:pr-12
+        image: loosec9n/bank.now:latest
         ports:
         - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bank-now-api-service
+spec:
+  selector:
+    # app.kubernetes.io/name: bank-now-api
+    app: bank-now-api
+  type: NodePort
+# type: LoadBalancer
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8080
+      nodePort: 31000
