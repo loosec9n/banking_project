@@ -6,19 +6,19 @@ import (
 	"time"
 )
 
-//seed for generating random string
+// seed for generating random string
 const alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
-//RandomInt -> random integer between min and max
+// RandomInt -> random integer between min and max
 func RandomInt(min, max int64) int64 {
 	return min + rand.Int63n(max-min+1)
 }
 
-//RandomString -> random string of n length
+// RandomString -> random string of n length
 func RandomString(n int) string {
 	var sb strings.Builder
 	s := len(alphabet)
@@ -30,19 +30,19 @@ func RandomString(n int) string {
 	return sb.String()
 }
 
-//RandonOwner -> generates a random owner name
+// RandonOwner -> generates a random owner name
 func RandomOwner() string {
 	return RandomString(6)
 }
 
-//RandomMoney -> generates a randon balance
+// RandomMoney -> generates a randon balance
 func RandomMoney() int64 {
 	return RandomInt(0, 10000)
 }
 
-//RandomCurrency -> generates a random currency from the list
+// RandomCurrency -> generates a random currency from the list
 func RandomCurrency() string {
-	currency := []string{"INR", "USD", "EUR", "CAD", "AUD"}
+	currency := []string{INR, USD, EUR, CAD, AUD}
 	n := len(currency)
 	return currency[rand.Intn(n)]
 }
