@@ -22,11 +22,15 @@ func NewServer(store *db.Store) *Server {
 	if v, ok := binding.Validator.Engine().(*validator.Validate); ok {
 		v.RegisterValidation("currency", validCurrency)
 	}
+	//Users
+	router.POST("/user", server.createUser)
 
+	//Accounts
 	router.POST("/account", server.createAccount)
 	router.GET("/account/:id", server.getAccount)
 	router.GET("/accounts", server.listAccounts)
 
+	//Money transfer
 	router.POST("/transfers", server.createTrasfer)
 
 	server.router = router
