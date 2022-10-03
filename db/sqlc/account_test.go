@@ -10,10 +10,11 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-//createRandomAccount -> creates an account for testing finctionality
+// createRandomAccount -> creates an account for testing finctionality
 func createRandomAccount(t *testing.T) Account {
+	user := createRandomUser(t)
 	arg := CreateAccountParams{
-		Owner:    utils.RandomOwner(),
+		Owner:    user.Username,
 		Balance:  utils.RandomMoney(),
 		Currency: utils.RandomCurrency(),
 	}
@@ -33,12 +34,12 @@ func createRandomAccount(t *testing.T) Account {
 	return account
 }
 
-//TestCreateAccount -> unit testing the creating account functionality
+// TestCreateAccount -> unit testing the creating account functionality
 func TestCreateAccount(t *testing.T) {
 	createRandomAccount(t)
 }
 
-//TestGetAccount -> unit testing the get account functionality
+// TestGetAccount -> unit testing the get account functionality
 func TestGetAccount(t *testing.T) {
 	account1 := createRandomAccount(t)
 	account2, err := testQueries.GetAccount(context.Background(), account1.ID)
@@ -53,7 +54,7 @@ func TestGetAccount(t *testing.T) {
 	require.WithinDuration(t, account1.CreatedAt, account2.CreatedAt, time.Second)
 }
 
-//TestUpdateAccount -> unit testing the update account fuctionality
+// TestUpdateAccount -> unit testing the update account fuctionality
 func TestUpdateAccount(t *testing.T) {
 	account1 := createRandomAccount(t)
 
@@ -74,7 +75,7 @@ func TestUpdateAccount(t *testing.T) {
 	require.WithinDuration(t, account1.CreatedAt, account2.CreatedAt, time.Second)
 }
 
-//TestDeleteAccount -> unit testing the delete account fuctionality
+// TestDeleteAccount -> unit testing the delete account fuctionality
 func TestDeleteAccount(t *testing.T) {
 	account1 := createRandomAccount(t)
 	err := testQueries.DeleteAccount(context.Background(), account1.ID)
@@ -86,7 +87,7 @@ func TestDeleteAccount(t *testing.T) {
 	require.Empty(t, account2)
 }
 
-//TestListAccounts -> unit testing the listing mutiple accounts fuctionality
+// TestListAccounts -> unit testing the listing mutiple accounts fuctionality
 func TestListAccounts(t *testing.T) {
 	for i := 0; i < 10; i++ {
 		createRandomAccount(t)
