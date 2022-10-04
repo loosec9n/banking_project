@@ -1,3 +1,5 @@
+DB_URL=postgresql://root:password@localhost:5432/simple_bank?sslmode=disable
+
 postgres:
 	sudo docker run --name simplebanksql -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=password -d postgres:14-alpine
 
@@ -11,10 +13,10 @@ dropdb:
 	sudo docker exec -it simplebanksql dropdb simple_bank
 
 dbup:
-	migrate -path db/migration -database "postgresql://root:password@localhost:5432/simple_bank?sslmode=disable" -verbose up
+	migrate -path db/migration -database "$(DB_URL)" -verbose up
 
 dbdown:
-	migrate -path db/migration -database "postgresql://root:password@localhost:5432/simple_bank?sslmode=disable" -verbose down
+	migrate -path db/migration -database "$(DB_URL)" -verbose down
 
 sqlc: 
 	sqlc generate
