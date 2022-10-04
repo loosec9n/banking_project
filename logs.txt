@@ -22,3 +22,9 @@
 2022/10/03 21:36:27 cannot create an server: cannot make token invalid key size: must have exactly 32 number of characters
 2022/10/03 21:37:01 SimpleBank
 2022/10/03 21:41:11 SimpleBank
+2022/10/03 23:13:16 SimpleBank
+2022/10/04 10:27:27 SimpleBank
+2022/10/04 11:20:02 SimpleBank
+2022/10/04 11:22:35 SimpleBank
+2022/10/04 11:38:44 SimpleBank
+2022/10/04 11:41:13 SimpleBank
