@@ -33,4 +33,7 @@ proto:
     --go-grpc_out=pb --go-grpc_opt=paths=source_relative \
     proto/*.proto
 
-.PHONY: postgres indb createdb dropdb dbup dbdown sqlc test proto server
+evans:
+	evans --host localhost --port 8181 -r repl
+
+.PHONY: postgres indb createdb dropdb dbup dbdown sqlc test proto server evans
