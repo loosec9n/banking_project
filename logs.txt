@@ -54,3 +54,6 @@
 2022/10/05 12:21:50 starting GRPC server in [::]:8181 
 2022/10/05 12:21:50 starting HTTP Gateway server in [::]:8080 
 2022/10/05 12:22:06 md: map[:authority:[localhost:8181] content-type:[application/grpc] grpc-client:[evans] user-agent:[grpc-go/1.48.0]]
+2022/10/05 14:19:05 SimpleBank
+2022/10/05 14:19:05 starting GRPC server in [::]:8181 
+2022/10/05 14:19:05 starting HTTP Gateway server in [::]:8080 
