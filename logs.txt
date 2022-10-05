@@ -28,3 +28,29 @@
 2022/10/04 11:22:35 SimpleBank
 2022/10/04 11:38:44 SimpleBank
 2022/10/04 11:41:13 SimpleBank
+2022/10/05 09:53:02 SimpleBank
+2022/10/05 09:53:02 starting GRPC server in [::]:8181 
+2022/10/05 10:25:27 SimpleBank
+2022/10/05 10:25:27 starting GRPC server in [::]:8181 
+2022/10/05 11:09:08 SimpleBank
+2022/10/05 11:09:08 starting GRPC server in [::]:8181 
+2022/10/05 11:09:08 starting HTTP Gateway server in [::]:8080 
+2022/10/05 11:27:41 SimpleBank
+2022/10/05 11:27:41 starting GRPC server in [::]:8181 
+2022/10/05 11:27:41 starting HTTP Gateway server in [::]:8080 
+2022/10/05 11:54:46 SimpleBank
+2022/10/05 11:54:46 starting GRPC server in [::]:8181 
+2022/10/05 11:54:46 starting HTTP Gateway server in [::]:8080 
+2022/10/05 12:10:09 SimpleBank
+2022/10/05 12:10:09 starting GRPC server in [::]:8181 
+2022/10/05 12:10:09 starting HTTP Gateway server in [::]:8080 
+2022/10/05 12:10:17 md: map[grpcgateway-accept:[*/*] grpcgateway-cache-control:[no-cache] grpcgateway-content-type:[application/json] grpcgateway-user-agent:[PostmanRuntime/7.29.2] x-forwarded-for:[::1] x-forwarded-host:[localhost:8080]]
+2022/10/05 12:16:07 SimpleBank
+2022/10/05 12:16:07 starting GRPC server in [::]:8181 
+2022/10/05 12:16:07 starting HTTP Gateway server in [::]:8080 
+2022/10/05 12:16:14 md: map[grpcgateway-accept:[*/*] grpcgateway-cache-control:[no-cache] grpcgateway-content-type:[application/json] grpcgateway-user-agent:[PostmanRuntime/7.29.2] x-forwarded-for:[::1] x-forwarded-host:[localhost:8080]]
+2022/10/05 12:17:38 md: map[:authority:[localhost:8181] content-type:[application/grpc] grpc-client:[evans] user-agent:[grpc-go/1.48.0]]
+2022/10/05 12:21:50 SimpleBank
+2022/10/05 12:21:50 starting GRPC server in [::]:8181 
+2022/10/05 12:21:50 starting HTTP Gateway server in [::]:8080 
+2022/10/05 12:22:06 md: map[:authority:[localhost:8181] content-type:[application/grpc] grpc-client:[evans] user-agent:[grpc-go/1.48.0]]
