@@ -57,3 +57,37 @@
 2022/10/05 14:19:05 SimpleBank
 2022/10/05 14:19:05 starting GRPC server in [::]:8181 
 2022/10/05 14:19:05 starting HTTP Gateway server in [::]:8080 
+2022/10/18 10:02:52 SimpleBank
+2022/10/18 10:02:52 starting GRPC server in [::]:8181 
+2022/10/18 10:02:52 starting HTTP Gateway server in [::]:8080 
+2022/10/18 10:15:04 SimpleBank
+2022/10/18 10:15:04 starting GRPC server in [::]:8181 
+2022/10/18 10:15:04 starting HTTP Gateway server in [::]:8080 
+2022/10/18 10:20:14 SimpleBank
+2022/10/18 10:20:14 starting GRPC server in [::]:8181 
+2022/10/18 10:20:14 starting HTTP Gateway server in [::]:8080 
+2022/10/18 10:20:36 Justin5 len:  7
+2022/10/18 10:20:36 Justin John len:  11
+2022/10/18 10:20:36 test5@test.com len:  14
+2022/10/18 10:20:36 secretPass len:  10
+2022/10/18 10:21:57 SimpleBank
+2022/10/18 10:21:57 starting GRPC server in [::]:8181 
+2022/10/18 10:21:57 starting HTTP Gateway server in [::]:8080 
+2022/10/18 10:22:01 Justin5 len:  7
+2022/10/18 10:22:01 Justin John len:  11
+2022/10/18 10:22:01 test5@test.com len:  14
+2022/10/18 10:22:01 secretPass len:  10
+2022/10/18 10:22:16 Justin4 len:  7
+2022/10/18 10:22:16 secretPass len:  10
+2022/10/18 10:22:44 SimpleBank
+2022/10/18 10:22:44 starting GRPC server in [::]:8181 
+2022/10/18 10:22:44 starting HTTP Gateway server in [::]:8080 
+2022/10/18 10:22:50 Justin4 len:  7
+2022/10/18 10:22:50 secretPass len:  10
+2022/10/18 10:23:28 SimpleBank
+2022/10/18 10:23:28 starting GRPC server in [::]:8181 
+2022/10/18 10:23:28 starting HTTP Gateway server in [::]:8080 
+2022/10/18 10:23:34 Justin4 len:  7
+2022/10/18 10:23:34 secretPass len:  10
+2022/10/18 10:23:48 Justin5 len:  7
+2022/10/18 10:23:48 secretPass len:  10
